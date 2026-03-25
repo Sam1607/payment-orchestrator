@@ -1,0 +1,107 @@
+.wallet-page { max-width: 750px; }
+
+.page-title { font-size: 1.5rem; font-weight: 800; color: var(--text-h); margin: 0 0 1.5rem; }
+
+/* ── Balance cards ──── */
+.wallet-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.wallet-card {
+  flex: 1;
+  min-width: 140px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.wc-currency {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+.wc-balance {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-h);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Form card ──────── */
+.wallet-form-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.5rem;
+}
+
+.form-title { margin: 0 0 1.25rem; font-size: 1.1rem; font-weight: 700; color: var(--text-h); }
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.form-grid .full { grid-column: 1 / -1; }
+
+.form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.form-grid input,
+.form-grid select,
+.form-grid textarea {
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text-h);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.form-grid input:focus,
+.form-grid select:focus { border-color: var(--accent); }
+
+/* ── Alert ──────────── */
+.alert {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  margin-bottom: 1rem;
+}
+.alert.success { background: #d1fae5; color: #065f46; }
+.alert.error   { background: #fee2e2; color: #991b1b; }
+
+@media (prefers-color-scheme: dark) {
+  .alert.success { background: #064e3b; color: #6ee7b7; }
+  .alert.error   { background: #450a0a; color: #fca5a5; }
+}
+
+.alert-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: inherit;
+  padding: 0;
+  flex-shrink: 0;
+}

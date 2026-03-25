@@ -1,0 +1,103 @@
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  padding: 1rem;
+}
+
+.login-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.login-logo { font-size: 2.5rem; margin-bottom: 0.5rem; }
+.login-title { margin: 0 0 0.25rem; font-size: 1.5rem; color: var(--text-h); }
+.login-subtitle { margin: 0 0 1.75rem; color: var(--text); font-size: 0.9rem; }
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.login-form input {
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text-h);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.login-form input:focus { border-color: var(--accent); }
+
+.login-error {
+  color: #ef4444;
+  font-size: 0.85rem;
+  margin: 0;
+  background: rgba(239,68,68,0.08);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+}
+
+.login-btn { width: 100%; margin-top: 0.5rem; }
+
+/* Demo creds table */
+.demo-creds {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.25rem;
+  text-align: left;
+}
+
+.demo-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text);
+  margin: 0 0 0.6rem;
+}
+
+.demo-creds table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+.demo-creds th, .demo-creds td {
+  padding: 0.3rem 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.demo-creds th { color: var(--text); font-weight: 600; }
+.demo-creds td { color: var(--text-h); }
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.1rem 0.5rem;
+  border-radius: 99px;
+  text-transform: uppercase;
+}
+.badge.user    { background:#d1fae5; color:#065f46; }
+.badge.admin   { background:#fde68a; color:#92400e; }
+.badge.auditor { background:#dbeafe; color:#1e40af; }

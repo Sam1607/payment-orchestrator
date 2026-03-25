@@ -1,0 +1,37 @@
+.dashboard { max-width: 900px; }
+
+.dash-hero { margin-bottom: 2rem; }
+.dash-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-h);
+  margin: 0 0 0.5rem;
+}
+.dash-subtitle { color: var(--text); margin: 0; font-size: 1rem; }
+
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.dash-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  text-decoration: none;
+  transition: box-shadow 0.2s, border-color 0.2s, transform 0.15s;
+}
+.dash-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-bg);
+  transform: translateY(-2px);
+}
+
+.dash-card-icon  { font-size: 2rem; }
+.dash-card-title { margin: 0; font-size: 1.1rem; font-weight: 700; color: var(--text-h); }
+.dash-card-desc  { margin: 0; font-size: 0.85rem; color: var(--text); line-height: 1.5; }
