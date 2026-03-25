@@ -1,35 +1,5 @@
 # Distributed Ledger & Payment Orchestration System
 
-## Important Note (Read First)
-
-This is a **two-week take-home engineering project** designed to evaluate system design thinking, engineering judgement, and implementation quality.
-
-You are **explicitly encouraged to use any resources available to you**, including but not limited to:
-
-* AI tools (ChatGPT, Claude, Copilot, etc.)
-* Documentation
-* StackOverflow
-* Open-source repositories
-* Libraries and frameworks
-* Code templates
-
-**Use of AI is expected.**
-
-Modern engineering involves effectively leveraging tools that increase productivity. What matters here is **how you design the system, structure the solution, and make engineering decisions**, not whether the code was written entirely by hand.
-
-You may use AI to:
-
-* Generate boilerplate
-* Assist with architecture exploration
-* Help debug issues
-* Accelerate development
-
-However, you should still be able to **understand, explain, and justify everything in your solution**.
-
-Estimated effort: **~15–25 hours across two weeks** (assuming you have a full-time job).
-
----
-
 # Project Overview
 
 Build a **mini distributed payment orchestration platform** that simulates how modern fintech systems process transactions across multiple services.
